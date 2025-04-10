@@ -1,0 +1,220 @@
+Connection established to port 12345
+Message sent to port 12345: LIST
+List operation started
+Message received from port 12345: LIST
+List operation successfully completed
+Message sent to port 12345: STORE TestFile.txt 8
+Store operation started for file TestFile.txt
+Message received from port 12345: STORE_TO 12346 12347 12348
+Controller replied to store TestFile.txt in these Dstores: 12346 12347 12348 
+Connection established to port 12346
+Message sent to port 12346: STORE TestFile.txt 8
+Storing file TestFile.txt to Dstore 12346
+Message received from port 12346: ACK
+ACK received from Dstore 12346 to store file TestFile.txt
+Store of file TestFile.txt to Dstore 12346 successfully completed
+Connection established to port 12347
+Message sent to port 12347: STORE TestFile.txt 8
+Storing file TestFile.txt to Dstore 12347
+Message received from port 12347: ACK
+ACK received from Dstore 12347 to store file TestFile.txt
+Store of file TestFile.txt to Dstore 12347 successfully completed
+Connection established to port 12348
+Message sent to port 12348: STORE TestFile.txt 8
+Storing file TestFile.txt to Dstore 12348
+Message received from port 12348: ACK
+ACK received from Dstore 12348 to store file TestFile.txt
+Store of file TestFile.txt to Dstore 12348 successfully completed
+Message received from port 12345: STORE_COMPLETE
+Store operation for file TestFile.txt completed
+Message sent to port 12345: STORE TestFile.txt 8
+Store operation started for file TestFile.txt
+Message received from port 12345: ERROR_FILE_ALREADY_EXISTS
+File to store TestFile.txt already exists in the data store
+Message sent to port 12345: LIST
+List operation started
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+Message sent to port 12345: LOAD TestFile.txt
+Load operation for file TestFile.txt started
+Message received from port 12345: LOAD_FROM 12347 8
+Controller replied to load file TestFile.txt (size: 8 bytes) from Dstore 12347
+Connection established to port 12347
+Message sent to port 12347: LOAD_DATA TestFile.txt
+Loading file TestFile.txt from Dstore 12347
+Load operation for file TestFile.txt from Dstore 12347 failed
+Message sent to port 12345: RELOAD TestFile.txt
+Retrying to load file TestFile.txt
+Message received from port 12345: LOAD_FROM 12348 8
+Controller replied to load file TestFile.txt (size: 8 bytes) from Dstore 12348
+Connection established to port 12348
+Message sent to port 12348: LOAD_DATA TestFile.txt
+Loading file TestFile.txt from Dstore 12348
+Load operation for file TestFile.txt from Dstore 12348 failed
+Message sent to port 12345: RELOAD TestFile.txt
+Retrying to load file TestFile.txt
+Message received from port 12345: LOAD_FROM 12347 8
+Controller replied to load file TestFile.txt (size: 8 bytes) from Dstore 12347
+Connection established to port 12347
+Message sent to port 12347: LOAD_DATA TestFile.txt
+Loading file TestFile.txt from Dstore 12347
+Load operation for file TestFile.txt from Dstore 12347 failed
+Message sent to port 12345: RELOAD TestFile.txt
+Retrying to load file TestFile.txt
+Message received from port 12345: LOAD_FROM 12346 8
+Controller replied to load file TestFile.txt (size: 8 bytes) from Dstore 12346
+Connection established to port 12346
+Message sent to port 12346: LOAD_DATA TestFile.txt
+Loading file TestFile.txt from Dstore 12346
+Load operation for file TestFile.txt from Dstore 12346 failed
+Message sent to port 12345: RELOAD TestFile.txt
+Retrying to load file TestFile.txt
+Message received from port 12345: LOAD_FROM 12346 8
+Controller replied to load file TestFile.txt (size: 8 bytes) from Dstore 12346
+Connection established to port 12346
+Message sent to port 12346: LOAD_DATA TestFile.txt
+Loading file TestFile.txt from Dstore 12346
+Load operation for file TestFile.txt from Dstore 12346 failed
+Message sent to port 12345: RELOAD TestFile.txt
+Retrying to load file TestFile.txt
+Message received from port 12345: LOAD_FROM 12346 8
+Controller replied to load file TestFile.txt (size: 8 bytes) from Dstore 12346
+Connection established to port 12346
+Message sent to port 12346: LOAD_DATA TestFile.txt
+Loading file TestFile.txt from Dstore 12346
+Load operation for file TestFile.txt from Dstore 12346 failed
+Message sent to port 12345: RELOAD TestFile.txt
+Retrying to load file TestFile.txt
+Message received from port 12345: LOAD_FROM 12347 8
+Controller replied to load file TestFile.txt (size: 8 bytes) from Dstore 12347
+Connection established to port 12347
+Message sent to port 12347: LOAD_DATA TestFile.txt
+Loading file TestFile.txt from Dstore 12347
+Load operation for file TestFile.txt from Dstore 12347 failed
+Message sent to port 12345: RELOAD TestFile.txt
+Retrying to load file TestFile.txt
+Message received from port 12345: LOAD_FROM 12346 8
+Controller replied to load file TestFile.txt (size: 8 bytes) from Dstore 12346
+Connection established to port 12346
+Message sent to port 12346: LOAD_DATA TestFile.txt
+Loading file TestFile.txt from Dstore 12346
+Load operation for file TestFile.txt from Dstore 12346 failed
+Message sent to port 12345: RELOAD TestFile.txt
+Retrying to load file TestFile.txt
+Message received from port 12345: LOAD_FROM 12347 8
+Controller replied to load file TestFile.txt (size: 8 bytes) from Dstore 12347
+Connection established to port 12347
+Message sent to port 12347: LOAD_DATA TestFile.txt
+Loading file TestFile.txt from Dstore 12347
+Load operation for file TestFile.txt from Dstore 12347 failed
+Message sent to port 12345: RELOAD TestFile.txt
+Retrying to load file TestFile.txt
+Message received from port 12345: LOAD_FROM 12348 8
+Controller replied to load file TestFile.txt (size: 8 bytes) from Dstore 12348
+Connection established to port 12348
+Message sent to port 12348: LOAD_DATA TestFile.txt
+Loading file TestFile.txt from Dstore 12348
+Load operation for file TestFile.txt from Dstore 12348 failed
+ERROR: 10 Dstores contacted without succeeding, LOAD operation failed
+Message sent to port 12345: REMOVE TestFile.txt
+Remove operation for file TestFile.txt started
+Message received from port 12345: ERROR_FILE_DOES_NOT_EXIST
+Remove operation failed because file does not exist (filename: TestFile.txt)
+Message sent to port 12345: REMOVE TestFile.txt
+Remove operation for file TestFile.txt started
+Message received from port 12345: ERROR_FILE_DOES_NOT_EXIST
+Remove operation failed because file does not exist (filename: TestFile.txt)
+Message sent to port 12345: LIST
+List operation started
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+Connection established to port 12345
+Connection established to port 12345
+Connection established to port 12345
+Connection established to port 12345
+Connection established to port 12345
+Connection established to port 12345
+Connection established to port 12345
+Message sent to port 12345: LIST
+List operation started
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+Message sent to port 12345: LIST
+List operation started
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+Connection established to port 12345
+Connection established to port 12345
+Connection established to port 12345
+Message sent to port 12345: LIST
+Message sent to port 12345: LIST
+List operation started
+List operation started
+Message sent to port 12345: LIST
+Message sent to port 12345: LIST
+Message sent to port 12345: LIST
+List operation started
+Message sent to port 12345: LIST
+List operation started
+Message sent to port 12345: LIST
+Message received from port 12345: LIST TestFile.txt
+Message sent to port 12345: LIST
+Message sent to port 12345: LIST
+Message received from port 12345: LIST TestFile.txt
+List operation started
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+List operation started
+List operation successfully completed
+List operation started
+List operation started
+Message received from port 12345: LIST TestFile.txt
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+List operation started
+List operation successfully completed
+Message received from port 12345: LIST TestFile.txt
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+List operation successfully completed
+Message sent to port 12345: LIST
+Message sent to port 12345: LIST
+Message received from port 12345: LIST TestFile.txt
+List operation started
+List operation started
+Message sent to port 12345: LIST
+List operation started
+List operation successfully completed
+Message sent to port 12345: LIST
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+Message received from port 12345: LIST TestFile.txt
+Message sent to port 12345: LIST
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+List operation started
+List operation successfully completed
+Message sent to port 12345: LIST
+Message sent to port 12345: LIST
+List operation started
+Message received from port 12345: LIST TestFile.txt
+List operation started
+List operation started
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+List operation successfully completed
+Message sent to port 12345: LIST
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+List operation successfully completed
+List operation started
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
+Message sent to port 12345: LIST
+List operation started
+Message received from port 12345: LIST TestFile.txt
+List operation successfully completed
